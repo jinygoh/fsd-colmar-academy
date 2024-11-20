@@ -112,6 +112,7 @@ header > div{
     flex-direction: column;         /* Set content in a single column*/
     justify-content: space-evenly;  /* Center content horizontally */
     height: 18rem;                  /* Adjust desired height of container */
+    padding-right: 2rem;            /* created a right padding for the right header*/  
 }
 
 header div > h1{   
@@ -193,6 +194,10 @@ header div > a {
     padding: 1rem;
 }
 
+.events .events-block:last-child{
+    background-color: #e7e7e7;
+}
+
 .events img{
     max-width: 100%;
     height: auto;
@@ -216,6 +221,35 @@ header div > a {
 .events .events-text a{
     font-size: small;
     color: blue;
+}
+
+/* set up footer */
+footer{
+    border-top: 1px solid #e7e7e7;
+    font-size: 0.8rem;
+    display: flex;
+    grid-column: full-start / full-end;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2rem;
+
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+footer ul li{
+    margin-right: 0.5rem;
+}
+
+footer ul li a{
+    color: #3434c6;
+}
+
+footer ul li a:hover{
+    color: #f00;
 }
 
 /* Hide events mobile */
